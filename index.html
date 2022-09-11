@@ -59,12 +59,42 @@
                     Get started at Melodia today.</p>
                 </div>
                 <div>
-                    <a role="button" class="btn btn-lg" id="freeTrialLesson">Free Trial Lesson</a>
+                    <a role="button" class="btn btn-lg" data-toggle="modal" data-target="#freeTrialModal" id="freeTrialLesson">Free Trial Lesson</a>
                 </div>
             </div>
             <div class="col-md-6 align-self-center">
-                <img id="homeImage" src="images/teenpiano.jpg" >
+                <img class="img-fluid"id="homeImage" src="images/teenpiano.jpg" >
             </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="freeTrialModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Book Your Free Lesson</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">First Name of Student</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Last Name of Student</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
         </div>
     </div>
 
@@ -112,33 +142,26 @@
 
     <hr style="width:100%;text-align:left;margin-left:0">
 
-    <!--Build 2 column section, header in col-sm-4, paragraph and text link in col-sm-8-->
+    <!--Third Section Build 2 column section, header in col-sm-4, paragraph and text link in col-sm-8-->
     <div class="container">
-        <div class="row row-content justify-content-center">
-            <h2 class="align-self-center">About Melodia</h2>
+        <div class="row justify-content-center mt-5 mb-2">
+            <h2> About Us</h2>
         </div>
-        <div class="row row-content align-self-center justify-content-center">
-            <div class="col-sm-3">
-                    <div class="card">
-                        <h4 class="card-header bg-white text-black">Reason 1</h4>
-                        <div class="card-body">
-                            <p>lorem ipsum lorem ipsum lorem ipsu,</p>
-                        </div>
-                    </div>
+        <div class="row row-content">
+            <div class="col-md-4 mb-5 align-self-center">
+                <img class="img-fluid" src="images/acoustic.jpg">
             </div>
-            <div class="col-sm-9 align-self-center align-items-center   justify-content-center">
-                <h4>Reason 2</h4>
-                <div>
-                    <p>Powder cake tootsie roll. Cake chocolate cake wafer pie. Liquorice ice cream cookie gummi bears sesame snaps gummi bears 
-                    icing pie gummi bears. Lemon drops sweet roll croissant sweet...</p>
-                </div>
+            <div class="col-md-8 mt-2 mb-5 p-5 align-self-center">
+                <h4>Our Story</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </div>
         </div>
-    </div>
+      
 
-    <footer class="site-footer">
+    <footer class="site-footer bg-dark">
         <div class="container">
-            <div class="row">
+            <div class="row row-content">
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">

@@ -10,6 +10,12 @@ h2 {
   font-size: 40px;
 }
 
+h4 {
+  color: #f28500;
+  font-weight: bold;
+  font-size: 25px;
+}
+
 #logo {
   border: solid 4px white;
   border-radius: 75px;
@@ -19,9 +25,10 @@ h2 {
 }
 
 #homeImage {
-  width:100%;
-  height:auto;
-  flex: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+
 }
 
 .navbar {
@@ -42,6 +49,34 @@ h2 {
   background-color: #f28500;
   color: white;
   font-weight: bold;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#freeTrialLesson span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#freeTrialLesson span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#freeTrialLesson:hover span {
+  padding-right: 25px;
+}
+
+#freeTrialLesson:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .card {
@@ -58,5 +93,10 @@ border-radius: 50px;
 
   }
   .card-link {
-    color: #994e30;
+    color: #1484a7;
+    font-weight: bold;
   }
+
+  .site-footer {
+    background-image: linear-gradient(#CEC8FF, white);
+    padding: 20px 0; }

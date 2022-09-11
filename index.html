@@ -13,7 +13,7 @@
 </head>
 <body>
        <!-- Build Nav and header image w/ link to home button -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="headerNav">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" id="headerNav">
         <div class="container">
             <a class="navbar-brand" href="index.html" id="logo">
                 <span class="fw-bold text-white">Melodia Music Academy</span>
@@ -26,59 +26,88 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Our Lessons</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Instructors</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lessons.html">Lessons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instructors.html">Instructors</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Showcase Night</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="showcase.html">Spring 2022 Showcase Night</a>
+                          <a class="dropdown-item" href="#">Summer 2022 Showcase Night</a>
+                          <a class="dropdown-item" href="#">Winter 2022 Showcase Night</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Register Your Student</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!--top section-->
+    <!--Top Section: 2 columns, h1 on left; img on right-->
     <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-sm-12 col-md-6">
+        <div class="row row-content">
+            <div class="col-sm-12 col-md-6 align-self-center">
                 <h1>Learn Together.</h1>
                 <h1>Create Together.</h1>
                 <div>
                     <p>Powder cake tootsie roll. Cake chocolate cake wafer pie. Liquorice ice cream cookie gummi bears sesame snaps gummi bears 
                             icing pie gummi bears. Lemon drops sweet roll croissant sweet...	
-                        <br>
+                    <br>
                     Get started at Melodia today.</p>
                 </div>
                 <div>
                     <a role="button" class="btn btn-lg" id="freeTrialLesson">Free Trial Lesson</a>
                 </div>
             </div>
-            <div class="col">
-        <img id="homeImage" src="images/teenpiano.jpg" >
+            <div class="col-md-6 align-self-center">
+                <img id="homeImage" src="images/teenpiano.jpg" >
             </div>
         </div>
     </div>
+
     <hr style="width:100%;text-align:left;margin-left:0">
 
     <!--2nd section-->
-    <!--Build 3 column sections, with 3 rows (row1: img/icons row2: header text row3: short description)-->
+    <!--Build 3 cards with short descriptions-->
     <div class="container">
         <div class="row row-content justify-content-center">
-            <h2 class="align-self-center">Why Melodia?</h2>
+                <h2 class="align-self-center">Why Melodia?</h2>
         </div>
-        <div class="row row-content align-self-center justify-content-center">
-            <div class="col-sm-3">
-                <div class="row row-content">
-                    <img src="images/logo copy.png">
+        <div class="row">
+            <div class="col-md-4 justify-content-center">
+                <div class="card" style="width: 22 rem;">
+                    <img class="card-img-top" src="images/teacherguitar.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Sound Instructors</h5>
+                        <p class="card-text">The best teachers are experts in their craft and can bring out the best in their students. </p>
+                        <a href="instructors.html" class="card-link">Read About Them >></a>
+                    </div>
                 </div>
-                <div class="row justify-content-center">
-                    <h4>Reason 1</h4>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 22 rem;">
+                    <img class="card-img-top" src="images/girlrecital.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Showcase Nights</h5>
+                        <p class="card-text">The best teachers are experts in their craft and can bring out the best in their students. </p>
+                        <a href="showcase.html" class="card-link">Learn More >> </a>
+                    </div>
                 </div>
-                <div class="row row-content justify-content-center">
-                    <p>Powder cake tootsie roll. Cake chocolate cake wafer pie. Liquorice ice cream cookie gummi bears sesame snaps gummi bears 
-                        icing pie gummi bears. Lemon drops sweet roll croissant sweet...	</p>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 22 rem;">
+                    <img class="card-img-top" src="images/pianozoom2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Hybrid Classes</h5>
+                        <p class="card-text">The best teachers are experts in their craft and can bring out the best in their students. </p>
+                        <a href="lessons.html" class="card-link">Sign-up Today >></a>
+                    </div>
                 </div>
             </div>
         </div>
-        
     </div>
 
     <hr style="width:100%;text-align:left;margin-left:0">
